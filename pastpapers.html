@@ -1,82 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
-    <link rel="stylesheet" href="style1.css">
+    <title>web dev project 1-compbridge part1/about</title>
+    <link rel="stylesheet" href="styles1.css">
 </head>
-
 <body>
-
-    <div class="logo">
-        <img src="assets/logo.png" class="logo">
-    </div>
-
-    <div class="background-container">
-        <video autoplay loop muted playsinline>
-            <source src="assets/Background.mp4" type="video/mp4">
-        </video>
-    </div>
-
-    <nav>
-        
-        <div class="dropdown">
-            <button class="menu-button">
-                <img src="assets/menu.png" alt="Menu Icon" class="menu">
-            </button>
-            <div class="dropdown-content">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="revision.html">Revision</a>
-                <a href="pastpapers.html">Past Papers</a>
-                <a href="contact.html">Contact Us</a>
+    <header>
+        <div class="header">
+            <nav class="navigation">
+                <img src="assets/logo.png" class="logo"> 
+                <div class="dropdown">
+                    <button class="menu-button">
+                        <img src="assets/menu.png" class="menu">
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="revision.html">Revision</a>
+                        <a href="pastpapers.html">Pastpapers</a>
+                        <a href="contact.html">Contact us</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="video-container">
+                <video id="video-bg" autoplay loop muted>
+                    <source src="assets/Background.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
-    </nav>
-    
-    <div class="section">
-        <!--/*past paper files*/-->
+    </header>
+    <section class="content-section">
+        <div class="container">
 
-     <section class="pastpaperschoice" id="pastpaperschoice">
-         <div class="center-text">
-             <h5>Newer past papers</h5>
-             <h2>PAST PAPERS</h2>
-         </div>
+            <!--/*past paper files*/-->
+<section class="pastpaperschoice" id="pastpaperschoice">
+    <div class="center-text">
+        <h5>Newer past papers</h5>
+        <h2>PAST PAPERS</h2>
+    </div>
 
+    <div class="pastpaperss">
 
-         <div class="pastpaperss">
-             <div class="box">
-                 <img src="assets/courseimg/contract-line.png">
-                 <h3>2024</h3>
-             </div>
- 
-             <div class="box">
-                 <img src="assets/courseimg/contract-line.png">
-                 <h3>2023</h3>
-             </div>
- 
-             <div class="box">
-                 <img src="assets/courseimg/contract-line.png">
-                 <h3>2022</h3>
-             </div>
- 
-             <div class="box">
-                 <img src="assets/courseimg/contract-line.png">
-                 <h3>2021</h3>
-             </div>
-             
-             
-             
+        <div class="box">
+            <img src="assets/courseimg/contract-line.png">
+            
+            <a href="practicalnotes.html"><h3>2025</h3></a>
+        </div>
 
+        <div class="box">
+            <img src="assets/courseimg/contract-line.png">
+            
+            <a href="practicalnotes.html"><h3>2024</h3></a>
+        </div>
 
+        <div class="box">
+            <img src="assets/courseimg/contract-line.png">
+            
+            <a href="practicalnotes.html"><h3>2023</h3></a>
+            
+        </div>
 
-     </section>
+    </div>
+</section>
 
-     </div>
-
-
-    <script src="script.js"></script>
+<div class="timer-container">
+    <div class="timer-display">
+      <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+    </div>
+    <div class="timer-controls">
+      <input type="number" id="hours-input" min="0" max="48" placeholder="Hours">
+      <input type="number" id="minutes-input" min="0" max="59" placeholder="Minutes">
+      <input type="number" id="seconds-input"  
+ min="0" max="59" placeholder="Seconds">
+      <button id="start-btn">Start</button>
+      <button id="stop-pause-btn">Stop/Pause</button>
+      <button id="reset-btn">Reset</button>
+    </div>
+  </div>
+            
+        </div>
+    </section>
 </body>
 </html>
+

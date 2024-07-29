@@ -1,0 +1,74 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web dev project 1-compbridge part1/about</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <nav class="navigation">
+                <img src="assets/logo.png" class="logo"> 
+                <div class="dropdown">
+                    <button class="menu-button">
+                        <img src="assets/menu.png" class="menu">
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="revision.html">Revision</a>
+                        <a href="pastpapers.html">Pastpapers</a>
+                        <a href="contact.html">Contact us</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="video-container">
+                <video id="video-bg" autoplay loop muted>
+                    <source src="assets/Background.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </header>
+    <section class="content-section">
+        <div class="container">
+
+            <div class="contact-section">
+                <div class="contactussheetposition">
+
+                   <div class="title">
+                       <h1>Contact us</h1>                        
+                   </div>
+                   <form action="#" method="post">
+                       <label for="name">Name:</label>
+                       <input type="text" id="name" name="name" required>
+           
+                       <label for="email">Email:</label>
+                       <input type="email" id="email" name="email" required>
+           
+                       <label for="message">Message:</label>
+                       <textarea id="message" name="message" rows="6" required></textarea>
+           
+                       <button type="submit">Submit</button>
+                   </form>
+
+                   <div class="businessemail">
+                       <div class="content">
+                           <p>~</p>
+                           <h3>Business inquiries:</h3>
+                           <p>compbridge.team@gmail.com</p>
+                       </div>
+                   </div>
+               </div>
+
+                </div>
+            
+            
+        </div>
+    </section>
+</body>
+</html>
