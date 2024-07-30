@@ -248,11 +248,11 @@
 }
 
 
-/*Contact us section*/
+/* Contact us section */
 
-.contact-section{
+.contact-section {
   align-items: center;
-  margin: 0 auto;                            
+  margin: 0 auto;
 }
 
 .contact-section {
@@ -264,7 +264,7 @@
   width: 100%;
   box-sizing: border-box;
   text-align: center;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .contact-section h1 {
@@ -284,7 +284,8 @@
   text-align: left;
 }
 
-.contact-section input, .contact-section textarea {
+.contact-section input,
+.contact-section textarea {
   margin-bottom: 15px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -309,8 +310,14 @@
   background-color: #004080;
 }
 
-.contactussheetposition{
+.contactussheetposition {
   text-align: center;
+}
+
+#form-status {
+  margin-top: 15px;
+  color: #001f3f;
+  font-size: 16px;
 }
 
 /*topic tests*/

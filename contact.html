@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>web dev project 1-compbridge part1/about</title>
     <link rel="stylesheet" href="styles1.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
@@ -36,38 +34,34 @@
     </header>
     <section class="content-section">
         <div class="container">
-
             <div class="contact-section">
                 <div class="contactussheetposition">
+                    <div class="title">
+                        <h1>Contact us</h1>                        
+                    </div>
+                    <form id="contact-form" action="https://formspree.io/f/xpwapepq" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+            
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+            
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+            
+                        <button type="submit">Submit</button>
+                        <p id="form-status"></p>
+                    </form>
 
-                   <div class="title">
-                       <h1>Contact us</h1>                        
-                   </div>
-                   <form action="#" method="post">
-                       <label for="name">Name:</label>
-                       <input type="text" id="name" name="name" required>
-           
-                       <label for="email">Email:</label>
-                       <input type="email" id="email" name="email" required>
-           
-                       <label for="message">Message:</label>
-                       <textarea id="message" name="message" rows="6" required></textarea>
-           
-                       <button type="submit">Submit</button>
-                   </form>
-
-                   <div class="businessemail">
-                       <div class="content">
-                           <p>~</p>
-                           <h3>Business inquiries:</h3>
-                           <p>compbridge.team@gmail.com</p>
-                       </div>
-                   </div>
-               </div>
-
+                    <div class="businessemail">
+                        <div class="content">
+                            <p>~</p>
+                            <h3>Business inquiries:</h3>
+                            <p>compbridge.team@gmail.com</p>
+                        </div>
+                    </div>
                 </div>
-            
-            
+            </div>
         </div>
     </section>
 </body>

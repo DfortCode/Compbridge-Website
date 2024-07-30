@@ -273,3 +273,33 @@ document.getElementById('pdfLink').addEventListener('click', function(event) {
   const fileURL = 'path/to/your/sample.pdf';
   window.open(fileURL, '_blank');
 });
+
+//Contact form//
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const formStatus = document.getElementById('form-status');
+  formStatus.textContent = 'Submitting...';
+
+  const formData = new FormData(event.target);
+
+  fetch(event.target.action, {
+      method: 'POST',
+      headers: {
+          'Accept': 'application/json'
+      },
+      body: formData
+  })
+  .then(response => {
+      if (response.ok) {
+          formStatus.textContent = 'Thank you for your message!';
+          event.target.reset();
+      } else {
+          formStatus.textContent = 'Failed to send message. Please try again later.';
+      }
+  })
+  .catch(error => {
+      console.error('Error:', error);
+      formStatus.textContent = 'Failed to send message. Please try again later.';
+  });
+});
